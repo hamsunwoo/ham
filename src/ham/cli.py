@@ -29,6 +29,7 @@ def cmd():
             #TODO 특정 날짜의 명령어 TOP N
         else:
             print("TODO - add error message")
+            parser.print_help()
     else:
         #TODO - 사용법을 출력한다 
         parser.print_help()
