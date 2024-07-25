@@ -11,11 +11,11 @@ def top(cnt, dt):
     sdf = fdf.sort_values(by='cnt', ascending=False).head(cnt)
     ddf = sdf.drop(columns=['dt'])
 
-    r = tabulate(ddf, headers='keys', tablefmt='pretty', showindex=False)
+    return ddf
 
-
+def pretty(df):
+    r = tabulate(df, headers='keys', tablefmt='pretty', showindex=False)
     return r
-
 
 def count(query):
     df = read_data()
