@@ -1,4 +1,5 @@
 import argparse
+from ham.db.utils import count, top
 
 def hello_msg():
     return "hello"
